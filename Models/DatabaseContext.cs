@@ -7,6 +7,8 @@ namespace TamagotchiAPI.Models
 {
     public partial class DatabaseContext : DbContext
     {
+        // This will create the Pets table that relates to our Pet Model
+        public DbSet<Pet> Pets { get; set; }
         // Change this if you want to have a different database name in development
         private static string DEVELOPMENT_DATABASE_NAME = "TamagotchiAPIDatabase";
 
